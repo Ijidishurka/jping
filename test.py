@@ -1,3 +1,4 @@
+# meta developer: @modwini
 import random
 import logging
 from .. import loader, utils
@@ -12,10 +13,10 @@ def register(cb):
 
 class pinj(loader.Module):
     """Фейк пинг"""
-    strings = {'name': 'pinj by @modwini'}
+    strings = {'name': 'фейк пинг'}
 
     async def pinjcmd(self, message):
-        """Используй .ping <цифры>."""
+        """Используй .pinj <цифры>."""
         text = utils.get_args_raw(message)
         if not text:
             await message.edit('<b>Нет аргумента после команды-_- </b>')
